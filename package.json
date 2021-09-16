@@ -1,0 +1,24 @@
+{
+  "name": "redstone-flash-storage-examples",
+  "version": "1.0.0",
+  "description": "Examples that use redstone-flash-storage for price injection",
+  "main": "index.js",
+  "repository": "https://github.com/redstone-finance/redstone-flash-storage-examples",
+  "author": "hatskier <suvorovalex1997@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn compile && hardhat test",
+    "compile": "hardhat compile"
+  },
+  "dependencies": {
+    "ethers": "^5.4.6",
+    "redstone-flash-storage": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "hardhat": "^2.6.4"
+  }
+}
