@@ -2756,9 +2756,9 @@ cbor@^5.1.0:
     nofilter "^1.0.4"
 
 ccxt@^1.53.35:
-  version "1.56.41"
-  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.56.41.tgz#b09723ee677e80a6bbd006cdbfad77e16ba83c06"
-  integrity sha512-NWx0tucvlSZ01SUB+nmeCQy7tYsypf4qGGd8hMXX8KYBGhtYVOHurFYs3Bk3DVjpTq0d6rxSYfbLxr6FIMqwKg==
+  version "1.56.42"
+  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.56.42.tgz#f4fb0760537a5635b38b944f30fb151464403998"
+  integrity sha512-u4KIYpKdtI20ciI6wifQezUNps+tnA3Df6eGj2nUAd6Cc72J+vjDm4zJKjw8dMsziAf54Iio7jPApHaiF8t8GA==
 
 center-align@^0.1.1:
   version "0.1.3"
@@ -7458,9 +7458,9 @@ npm-run-path@^2.0.0:
     path-key "^2.0.0"
 
 nth-check@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.0.tgz#1bb4f6dac70072fc313e8c9cd1417b5074c0a125"
-  integrity sha512-i4sc/Kj8htBrAiH1viZ0TgU8Y5XqCaV/FziYK6TBczxmeKm3AEFWqqF3195yKudrarqy7Zu80Ra5dobFjn9X/Q==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
+  integrity sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w==
   dependencies:
     boolbase "^1.0.0"
 
@@ -8348,7 +8348,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-redstone-api@^0.4.0, redstone-api@^0.4.4:
+redstone-api@^0.4.0, redstone-api@^0.4.4, redstone-api@^0.4.6:
   version "0.4.6"
   resolved "https://registry.yarnpkg.com/redstone-api/-/redstone-api-0.4.6.tgz#8743bf77144fa46dc7c86738883ddf8b208ebc07"
   integrity sha512-OfWGAPCtFVG1oa9oTk/JscanIO7ygAUVKnjT4pHKqk0bmjVICNoXIsKhEbAtRV+cXd9yqQ9GKmQ2/7Mhw/Gfxw==
@@ -8362,10 +8362,10 @@ redstone-api@^0.4.0, redstone-api@^0.4.4:
     pako "^2.0.3"
     redstone-node "0.4.18"
 
-redstone-flash-storage@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/redstone-flash-storage/-/redstone-flash-storage-1.2.0.tgz#a042af3abdd5a49930e1bb2c1705d26c9f444ee9"
-  integrity sha512-pRvKIY6wMdxhbOX7OXFuuAZJbe9J9G6eaQGJ1cY5RMOBHpRL9Q/TVsfleYkNHj4wrdR/lauUml6ig+gukUVK1Q==
+redstone-flash-storage@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/redstone-flash-storage/-/redstone-flash-storage-1.2.2.tgz#e08ddd27df9bec4cc6cbc035df8a80e763af1131"
+  integrity sha512-wgHRIFY5P5qOuUbvvlMu3/NEgyvgQ1yGKeqdNQSAnuFC+rpYCdQfMJ30UAz7Nppg1FqrF1dUMpWaLDs/cd1chg==
   dependencies:
     "@openzeppelin/contracts" "^4.1.0"
     "@openzeppelin/test-helpers" "^0.5.10"

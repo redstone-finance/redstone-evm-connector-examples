@@ -14,7 +14,8 @@ yarn test
 
 ## 🧑‍💻 Explore code
 - Example contract: [contracts/example.sol](contracts/example.sol)
-- Example contract usage: [test/example.test.js](test/example.test.js)
+- Example contract usage: [scripts/demo.js](scripts/demo.js)
+- Example contract test: [test/example.test.js](test/example.test.js)
 
 ## 🙋‍♂️ Need help?
 Please feel free to contact us [on Discord](https://redstone.finance/discord) if you have any questions.

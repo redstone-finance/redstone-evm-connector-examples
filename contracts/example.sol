@@ -3,19 +3,17 @@
 pragma solidity ^0.8.2;
 
 import "redstone-flash-storage/lib/contracts/message-based/PriceAware.sol";
-import "redstone-flash-storage/lib/contracts/mocks/MockStatePriceProvider.sol";
 
 contract ExampleContract is PriceAware {
+
+  uint256 private lastPrice = 0;
   
-  function execute() public view returns(uint256) {
-    console.log("Geting TSLA price");
+  function setPrice() public {
     uint256 ethPrice = getPriceFromMsg(bytes32("TSLA"));
-    // console.log(ethPrice);
-    return ethPrice;
+    lastPrice = ethPrice;
   }
 
-  function getTime() public view returns(uint256) {
-    return block.timestamp;
+  function getLastPrice() public view returns(uint256) {
+    return lastPrice;
   }
-
 }
