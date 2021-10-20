@@ -108,4 +108,4 @@ cache
 artifacts
 
 # Custom files
-.secrets.json
+.secrets*.json
