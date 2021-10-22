@@ -30,7 +30,7 @@ describe("Example contract", function () {
     exampleContract = WrapperBuilder
       .wrapLite(exampleContract)
       .usingPriceFeed("redstone-stocks");
-    exampleContract.authorizeProvider();
+    await exampleContract.authorizeProvider();
     await exampleContract.setPrice();
     const priceFromContract = await exampleContract.getLastPrice();
     expect(arePricesSimilar(priceFromContract, tslaPrice)).to.equal(true);
@@ -40,7 +40,7 @@ describe("Example contract", function () {
     exampleContract = WrapperBuilder
       .wrapLite(exampleContract)
       .usingPriceFeed("redstone-stocks", "TSLA");
-    exampleContract.authorizeProvider();
+    await exampleContract.authorizeProvider();
     await exampleContract.setPrice();
     const priceFromContract = await exampleContract.getLastPrice();
     expect(arePricesSimilar(priceFromContract, tslaPrice)).to.equal(true);
