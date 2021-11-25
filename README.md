@@ -1,6 +1,6 @@
-# redstone-flash-storage-examples
+# redstone-evm-connector-examples
 
-This repo contains simple examples of using [redstone-flash-storage](https://www.npmjs.com/package/redstone-flash-storage) - a tool for injecting trusted pricing data to EVM Blockchains
+This repo contains simple examples of using [redstone-evm-connector](https://www.npmjs.com/package/redstone-evm-connector) - a tool for injecting trusted pricing data to EVM Blockchains
 
 ## 📦 Install dependencies
 ```bash
