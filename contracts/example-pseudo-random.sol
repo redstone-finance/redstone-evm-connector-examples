@@ -4,14 +4,13 @@ pragma solidity ^0.8.2;
 
 import "redstone-flash-storage/lib/contracts/message-based/PriceAware.sol";
 
-contract ExampleRandom is PriceAware {
+contract ExamplePseudoRandom is PriceAware {
 
   uint256[] generatedNFTIndexes;
 
-  function getRandomness() private view returns(uint256) {
-    // TODO: connect redstone oracle here
-    // randomValue = getPriceFromMsg(bytes32("RANDOM"));
-    uint256 randomValue = 1231232132132131243546574;
+  function getPseudoRandomness() private view returns(uint256) {
+    uint256 randomValue = getPriceFromMsg(bytes32("ENTROPY"));
+
     return uint256(
       keccak256(
         abi.encodePacked(
@@ -26,7 +25,7 @@ contract ExampleRandom is PriceAware {
 
   // Generates a random number from 1 to maxValue
   function generateRandomNumber(uint256 maxValue) public view returns(uint256) {
-    uint256 randomness = getRandomness();
+    uint256 randomness = getPseudoRandomness();
     return (randomness % maxValue) + 1;
   }
 
@@ -34,7 +33,7 @@ contract ExampleRandom is PriceAware {
   // Then it generates the specified number of random numbers
   function generateManyRandomNumbers(uint256 maxRandomNumbersCount, uint256 maxValue) public {
     // randomValue = getPriceFromMsg(bytes32("RANDOM"));
-    uint256 randomness = getRandomness();
+    uint256 randomness = getPseudoRandomness();
     uint256 randomNumbersCount = generateRandomNumber(maxRandomNumbersCount);
     generatedNFTIndexes = new uint256[](randomNumbersCount);
     for (uint256 i = 0; i < randomNumbersCount; i++) {
