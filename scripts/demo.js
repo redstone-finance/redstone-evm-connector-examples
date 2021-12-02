@@ -1,4 +1,4 @@
-const { WrapperBuilder } = require("redstone-flash-storage");
+const { WrapperBuilder } = require("redstone-evm-connector");
 const ethers = require("ethers");
 const ExampleContract = require("../artifacts/contracts/example.sol/ExampleContract.json");
 const utils = require("./utils");

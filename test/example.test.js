@@ -1,4 +1,4 @@
-const { WrapperBuilder } = require("redstone-flash-storage");
+const { WrapperBuilder } = require("redstone-evm-connector");
 const redstone = require("redstone-api");
 const { expect } = require("chai");
 
@@ -39,7 +39,7 @@ describe("Example contract", function () {
   it("TSLA price test with simple authorization - single price", async function () {
     exampleContract = WrapperBuilder
       .wrapLite(exampleContract)
-      .usingPriceFeed("redstone-stocks", "TSLA");
+      .usingPriceFeed("redstone-stocks", { asset: "TSLA" });
     await exampleContract.authorizeProvider();
     await exampleContract.setPrice();
     const priceFromContract = await exampleContract.getLastPrice();

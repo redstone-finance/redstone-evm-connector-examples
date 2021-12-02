@@ -1,4 +1,4 @@
-const { WrapperBuilder } = require("redstone-flash-storage");
+const { WrapperBuilder } = require("redstone-evm-connector");
 
 describe("Example contract", function () {
   let exampleContract, wrappedContract;
@@ -8,7 +8,7 @@ describe("Example contract", function () {
     exampleContract = await ExampleRandom.deploy();
     wrappedContract = WrapperBuilder
       .wrapLite(exampleContract)
-      .usingPriceFeed("redstone", "ENTROPY");
+      .usingPriceFeed("redstone", { asset: "ENTROPY" });
 
     // Provider authorization
     await wrappedContract.authorizeProvider();
