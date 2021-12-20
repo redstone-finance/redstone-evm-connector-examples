@@ -1,6 +1,4 @@
-// const { WrapperBuilder } = require("redstone-evm-connector");
-// const redstone = require("redstone-api");
-// const { expect } = require("chai");
+const { expect } = require("chai");
 
 describe("Example strings contract", function () {
   let exampleContract, tslaPrice;
@@ -24,5 +22,8 @@ describe("Example strings contract", function () {
       result2,
       result3,
     });
+    expect(result1).to.equal(false);
+    expect(result2).to.equal(true);
+    expect(result3).to.equal(false);
   });
 });
