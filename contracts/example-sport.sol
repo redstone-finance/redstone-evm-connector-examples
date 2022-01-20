@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.2;
 
-import "redstone-flash-storage/lib/contracts/message-based/PriceAware.sol";
+import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
 
 contract ExampleSportContract is PriceAware {
 

@@ -1,4 +1,4 @@
-const { WrapperBuilder } = require("redstone-flash-storage");
+const { WrapperBuilder } = require("redstone-evm-connector");
 
 describe("Example contract", function () {
   let exampleContract, wrappedContract;

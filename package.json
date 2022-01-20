@@ -11,9 +11,10 @@
     "compile": "hardhat compile"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
     "ethers": "^5.4.6",
     "redstone-api": "^0.4.6",
-    "redstone-flash-storage": "^1.3.2"
+    "redstone-evm-connector": "^1.3.8"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

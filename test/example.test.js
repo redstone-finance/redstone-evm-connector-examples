@@ -1,4 +1,4 @@
-const { WrapperBuilder } = require("redstone-flash-storage");
+const { WrapperBuilder } = require("redstone-evm-connector");
 const redstone = require("redstone-api");
 const { expect } = require("chai");
 
