@@ -10,6 +10,8 @@ contract ContractA is ProxyConnector {
 
   ContractB private contractB;
 
+  uint256 private lastValueFromContractB;
+
   constructor() {
     contractB = new ContractB();
   }
@@ -24,14 +26,25 @@ contract ContractA is ProxyConnector {
       abi.encodeWithSelector(ContractB.writeValue.selector));
   }
 
-  function readFromContractB() public returns(uint256 value) {
+  // Implementation from: https://stackoverflow.com/a/63258666
+  function toUint256(bytes memory _bytes) internal pure returns (uint256 value) {
+    assembly {
+      value := mload(add(_bytes, 0x20))
+    }
+  }
+
+  function readFromContractBAndSave() public {
     // Usually we would simply call the one instruction below
-    // return bContract.getLastTeslaPrice();
+    // lastValueFromContractB = bContract.getLastTeslaPrice();
 
     // But to proxy calldata we need to add a bit more instructions
-    // TODO: Kuba, do you know how to convert get the actual function response here?
-    return proxyCalldata(
+    bytes memory bytesResponse = proxyCalldata(
       address(contractB),
       abi.encodeWithSelector(ContractB.getValue.selector));
+    lastValueFromContractB = toUint256(bytesResponse);
+  }
+
+  function getLastValueFromContractB() public view returns(uint256) {
+    return lastValueFromContractB;
   }
 }

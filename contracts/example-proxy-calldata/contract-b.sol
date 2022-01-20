@@ -21,6 +21,7 @@ contract ContractB is PriceAware {
   }
 
   function getValue() public view returns(uint256) {
-    return getPriceFromMsg(bytes32("TSLA"));
+    uint result = getPriceFromMsg(bytes32("TSLA"));
+    return result;
   }
 }

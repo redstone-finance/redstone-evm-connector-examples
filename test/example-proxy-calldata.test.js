@@ -25,8 +25,9 @@ describe("Example contract", function () {
     await wrappedContractA.writeInContractB();
 
     // Example of reading from contract A (which read from contract B)
-    const priceFromContract = await wrappedContractA.readFromContractB();
-    console.log({ priceFromContract });
-    expect(arePricesSimilar(priceFromContract, tslaPrice)).to.equal(true);
+    await wrappedContractA.readFromContractBAndSave();
+    const lastValueFromContractB = await wrappedContractA.getLastValueFromContractB();
+    console.log({ lastValueFromContractB });
+    expect(arePricesSimilar(lastValueFromContractB, tslaPrice)).to.equal(true);
   });
 });
