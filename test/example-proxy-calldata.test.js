@@ -8,21 +8,25 @@ function arePricesSimilar(priceFromContract, price, maxDiff = 1) {
 }
 
 describe("Example contract", function () {
-  let exampleAContract, tslaPrice;
+  let contractA, tslaPrice;
 
   beforeEach(async () => {
-    const ExampleAContract = await ethers.getContractFactory("ExampleAContract");
-    exampleAContract = await ExampleAContract.deploy();
+    const ContractA = await ethers.getContractFactory("ContractA");
+    contractA = await ContractA.deploy();
     tslaPrice = (await redstone.getPrice("TSLA")).value;
   });
 
   it("Call contract A that calls contract B", async function () {
-    wrappedContract = WrapperBuilder
-      .wrapLite(exampleAContract)
+    wrappedContractA = WrapperBuilder
+      .wrapLite(contractA)
       .usingPriceFeed("redstone-stocks");
-    await wrappedContract.setPriceInContractB();
-    const priceFromContract = await wrappedContract.getPriceFromContractB();
-    console.log({priceFromContract});
+
+    // Example of writing to state
+    await wrappedContractA.writeInContractB();
+
+    // Example of reading from contract A (which read from contract B)
+    const priceFromContract = await wrappedContractA.readFromContractB();
+    console.log({ priceFromContract });
     expect(arePricesSimilar(priceFromContract, tslaPrice)).to.equal(true);
   });
 });
