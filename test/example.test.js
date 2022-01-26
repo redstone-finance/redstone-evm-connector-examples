@@ -39,7 +39,7 @@ describe("Example contract", function () {
   it("TSLA price test with simple authorization - single price", async function () {
     exampleContract = WrapperBuilder
       .wrapLite(exampleContract)
-      .usingPriceFeed("redstone-stocks", "TSLA");
+      .usingPriceFeed("redstone-stocks", { asset: "TSLA" });
     await exampleContract.authorizeProvider();
     await exampleContract.setPrice();
     const priceFromContract = await exampleContract.getLastPrice();

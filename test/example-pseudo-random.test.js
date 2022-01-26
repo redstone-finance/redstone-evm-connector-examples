@@ -8,25 +8,26 @@ describe("Example contract", function () {
     exampleContract = await ExampleRandom.deploy();
     wrappedContract = WrapperBuilder
       .wrapLite(exampleContract)
-      .usingPriceFeed("redstone", "ENTROPY");
+      .usingPriceFeed("redstone", { asset: "ENTROPY" });
 
     // Provider authorization
     await wrappedContract.authorizeProvider();
+    // await exampleContract.authorizeSigner("0x0C39486f770B26F5527BBBf942726537986Cd7eb");
   });
 
   it("Example run", async function () {
     const randomNumber = await wrappedContract.generateRandomNumber(1000);
-    console.log({randomNumber: randomNumber.toNumber()});
+    // console.log({randomNumber: randomNumber.toNumber()});
 
-    const maxNumbersCount = 16;
-    const maxValue = 10000;
-    const tx = await wrappedContract.generateManyRandomNumbers(maxNumbersCount, maxValue);
-    await tx.wait();
+    // const maxNumbersCount = 16;
+    // const maxValue = 10000;
+    // const tx = await wrappedContract.generateManyRandomNumbers(maxNumbersCount, maxValue);
+    // await tx.wait();
 
-    const manyRandoms = await wrappedContract.getGeneratedNFTIndexes();
-    console.log({
-      manyRandoms: manyRandoms.map(r => r.toNumber()),
-    });
+    // const manyRandoms = await wrappedContract.getGeneratedNFTIndexes();
+    // console.log({
+    //   manyRandoms: manyRandoms.map(r => r.toNumber()),
+    // });
   });
 
 });
