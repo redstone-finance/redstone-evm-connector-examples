@@ -9458,10 +9458,10 @@ redstone-api@^0.4.4, redstone-api@^0.4.6:
     pako "^2.0.3"
     redstone-node "0.4.18"
 
-redstone-evm-connector@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.1.0.tgz#b20ce9467ee1adb086e679431a7e3e2ff38b555a"
-  integrity sha512-/cQrowspQHSaP7dGXn1rgWBwN742FtalTzmEMn+K4VJEA6xQyv6FieHyEzeNW4liWv9+GPV8Axk4p2nOhC8wEg==
+redstone-evm-connector@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.1.6.tgz#0ffbb9edbaf2cef6ac0e49a30f6ece903360ad7b"
+  integrity sha512-1y77xXcmn9hYd+ZUslNX4YkBL42JjYZobdwHZNyPxxg75AHN3Co8d0nkzBhlAgxh6TeO4w6a6/YAPNS6i6hc/w==
   dependencies:
     "@ethersproject/providers" "5.4.3"
     "@openzeppelin/contracts" "^4.1.0"

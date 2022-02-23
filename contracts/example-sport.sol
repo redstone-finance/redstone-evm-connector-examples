@@ -2,9 +2,9 @@
 
 pragma solidity ^0.8.2;
 
-import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
+import "redstone-evm-connector/lib/contracts/message-based/PriceAwareOwnable.sol";
 
-contract ExampleSportContract is PriceAware {
+contract ExampleSportContract is PriceAwareOwnable {
 
   uint256 private randa_markos__livia_renata_souza_0 = 0;
   uint256 private randa_markos__livia_renata_souza_1 = 0;

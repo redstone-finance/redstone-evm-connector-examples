@@ -2,9 +2,9 @@
 
 pragma solidity ^0.8.2;
 
-import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
+import "redstone-evm-connector/lib/contracts/message-based/PriceAwareOwnable.sol";
 
-contract ExamplePseudoRandom is PriceAware {
+contract ExamplePseudoRandom is PriceAwareOwnable {
 
   uint256[] generatedNFTIndexes;
 

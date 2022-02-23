@@ -2,17 +2,15 @@
 
 pragma solidity ^0.8.2;
 
-import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
+import "redstone-evm-connector/lib/contracts/message-based/PriceAwareOwnable.sol";
 
 contract ContractB is PriceAware {
 
   uint256 private lastValue = 0;
 
-  /**
-   * Override trustedSigner getter, thanks to this we don't need to authorise signer
-   **/
-  function getTrustedSigner() public view virtual override returns (address) {
-    return 0x926E370fD53c23f8B71ad2B3217b227E41A92b12; //redstone-stocks;
+  function isSignerAuthorized(address _receviedSigner) public override virtual view returns (bool) {
+    // For redstone-avalanche-prod price feed (it has 2 authorised signers)
+    return _receviedSigner == 0x926E370fD53c23f8B71ad2B3217b227E41A92b12; // redstone-stocks
   }
   
   function writeValue() public {
