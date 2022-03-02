@@ -46,7 +46,7 @@ describe("Example contract", function () {
         "defaultSignerEvmAddress": "0x0C39486f770B26F5527BBBf942726537986Cd7eb",
         "valueSelectionAlgorithm": "first-valid",
         "timeoutMilliseconds": 10000,
-        "maxTimestampDiffMilliseconds": 150000,
+        "maxTimestampDiffMilliseconds": 175000, // 175 seconds
         "preVerifySignatureOffchain": true
       }
     });
