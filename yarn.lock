@@ -1173,40 +1173,40 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@graphql-tools/merge@8.2.10":
-  version "8.2.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.10.tgz#fe2fe5ad33dc2d1b0af8751c0c08d18bb6bb6d88"
-  integrity sha512-wpg22seOTNfkIO8jFAgo8w1BsT3IS2OTMpkCNf+dvcKSP09SVidYCOliyWHgjDCmpCrvvSjOX855NUKDx/Biew==
+"@graphql-tools/merge@8.2.11":
+  version "8.2.11"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.11.tgz#0cdc6c9feb32e3392bf0c633881a78ccc1d24368"
+  integrity sha512-fsjJVdsk9GV1jj1Ed2AKLlHYlsf0ZadTK8X5KxFRE1ZSnKqh56BLVX93JrtOIAnsiHkwOK2TC43HGhApF1swpQ==
   dependencies:
-    "@graphql-tools/utils" "8.6.9"
-    tslib "~2.3.0"
+    "@graphql-tools/utils" "8.6.10"
+    tslib "~2.4.0"
 
 "@graphql-tools/mock@^8.1.2":
-  version "8.6.8"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-8.6.8.tgz#232a23c0c14dcfca88012886230b93e6fc2303e2"
-  integrity sha512-zBZApp8dDAovWKZ0rkZ4CwDT8Z+B35pIyRjeHkxvtKt5XyEAabEwkuSYMyFdsghDWwhMD/VAZ/6DXtA62Hnf+A==
+  version "8.6.9"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-8.6.9.tgz#78ba3498dbf0cf371afd8558dd714c013e932639"
+  integrity sha512-Pto23TeUkUn0BYI6UtclPbKjunXvOGtDO7DZC8KagDfgMTu0ZMNTovv0kq+sgJBsnqD4Q9eRkR4IetSujHQBsA==
   dependencies:
-    "@graphql-tools/schema" "8.3.10"
-    "@graphql-tools/utils" "8.6.9"
+    "@graphql-tools/schema" "8.3.11"
+    "@graphql-tools/utils" "8.6.10"
     fast-json-stable-stringify "^2.1.0"
-    tslib "~2.3.0"
+    tslib "~2.4.0"
 
-"@graphql-tools/schema@8.3.10", "@graphql-tools/schema@^8.0.0":
-  version "8.3.10"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.10.tgz#c3e373e6ad854f533fc7e55859dd8f9e81de30dd"
-  integrity sha512-tfhjSTi3OzheDrVzG7rkPZg2BbQjmZRLM2vvQoM2b1TnUwgUIbpAgcnf+AWDLRsoCOWlezeLgij1BLeAR0Q0jg==
+"@graphql-tools/schema@8.3.11", "@graphql-tools/schema@^8.0.0":
+  version "8.3.11"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.11.tgz#c0606b301852820a46042ebb888fd09cc402518a"
+  integrity sha512-esMEnbyXbp8B5VEI4o395+x0G7Qmz3JSX5onFBF8HeLYcqWJasY5vBuWkO18VxrZpEnvnryodP6Y00bVag9O3Q==
   dependencies:
-    "@graphql-tools/merge" "8.2.10"
-    "@graphql-tools/utils" "8.6.9"
-    tslib "~2.3.0"
+    "@graphql-tools/merge" "8.2.11"
+    "@graphql-tools/utils" "8.6.10"
+    tslib "~2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/utils@8.6.9":
-  version "8.6.9"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.6.9.tgz#fe1b81df29c9418b41b7a1ffe731710b93d3a1fe"
-  integrity sha512-Z1X4d4GCT81+8CSt6SgU4t1w1UAUsAIRb67mI90k/zAs+ArkB95iE3bWXuJCUmd1+r8DGGtmUNOArtd6wkt+OQ==
+"@graphql-tools/utils@8.6.10":
+  version "8.6.10"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.6.10.tgz#38e42a97a74ffcf5a21e816401e2ca1647194f6a"
+  integrity sha512-bJH9qwuyM3BP0PTU6/lvBDkk6jdEIOn+dbyk4pHMVNnvbJ1gZQwo62To8SHxxaUTus8OMhhVPSh9ApWXREURcg==
   dependencies:
-    tslib "~2.3.0"
+    tslib "~2.4.0"
 
 "@josephg/resolvable@^1.0.0":
   version "1.0.1"
@@ -2050,9 +2050,9 @@
   integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
 
 "@types/node@^12.12.54":
-  version "12.20.50"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.50.tgz#14ba5198f1754ffd0472a2f84ab433b45ee0b65e"
-  integrity sha512-+9axpWx2b2JCVovr7Ilgt96uc6C1zBKOQMpGtRbWT9IoR/8ue32GGMfGA4woP8QyP2gBs6GQWEVM3tCybGCxDA==
+  version "12.20.51"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.51.tgz#8bc65be17b95ab6dc89b70839598aeff43ded9c5"
+  integrity sha512-anVDMfReTatfH8GVmHmaTZOL0jeTLNZ9wK9SSrQS3tMmn4vUc+9fVWlUzAieuQefWDyWUz4Z3aqXxDgO1VsYjg==
 
 "@types/node@^12.12.6":
   version "12.20.25"
@@ -4019,9 +4019,9 @@ caniuse-lite@^1.0.30000844:
   integrity sha512-JN49KplOgHSXpIsVSF+LUyhD8PUp6xPpAXeRrrcBh4KBeP7W864jHn6RvzJgDlrReyeVjMFJL3PLpPvKIxlIHA==
 
 caniuse-lite@^1.0.30001332:
-  version "1.0.30001338"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001338.tgz#b5dd7a7941a51a16480bdf6ff82bded1628eec0d"
-  integrity sha512-1gLHWyfVoRDsHieO+CaeYe7jSo/MT7D7lhaXUiwwbuR5BwQxORs0f1tAwUSQr3YbxRXJvxHM/PA5FfPQRnsPeQ==
+  version "1.0.30001339"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001339.tgz#f9aece4ea8156071613b27791547ba0b33f176cf"
+  integrity sha512-Es8PiVqCe+uXdms0Gu5xP5PF2bxLR7OBp3wUzUnuO7OHzhOfCyg3hdiGWVPVxhiuniOzng+hTc1u3fEQ0TlkSQ==
 
 capability@^0.2.5:
   version "0.2.5"
@@ -4047,9 +4047,9 @@ ccxt@^1.53.35:
   integrity sha512-u4KIYpKdtI20ciI6wifQezUNps+tnA3Df6eGj2nUAd6Cc72J+vjDm4zJKjw8dMsziAf54Iio7jPApHaiF8t8GA==
 
 ccxt@^1.60.81:
-  version "1.81.82"
-  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.81.82.tgz#8a62612ba8035d6e14f0ff470310945a5f40f424"
-  integrity sha512-grvlSuzmgFPP+KpH0Es0qaApE85HyFjtPbCTYcTh3dKlJcO0JnvK3U0wriKWPs07V6Vmao+Wn+Ns8KzIj68m6w==
+  version "1.82.3"
+  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.82.3.tgz#136ed00b42481abe2ec80b134413883fe1ad438a"
+  integrity sha512-qW5aFLdOKUyHvNlNxmVRuvlmuQWzvKZshiACILSX/PKXmW8EzlDWUctkyVlklvYbUfaEnyU0E34bNm2K3qG0Ig==
 
 chai-bn@^0.2.1:
   version "0.2.2"
@@ -4616,9 +4616,9 @@ copy-to@^2.0.1:
   integrity sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=
 
 core-js-compat@^3.21.0:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.22.4.tgz#d700f451e50f1d7672dcad0ac85d910e6691e579"
-  integrity sha512-dIWcsszDezkFZrfm1cnB4f/J85gyhiCpxbgBdohWCDtSVuAaChTSpPV7ldOQf/Xds2U5xCIJZOK82G4ZPAIswA==
+  version "3.22.5"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.22.5.tgz#7fffa1d20cb18405bd22756ca1353c6f1a0e8614"
+  integrity sha512-rEF75n3QtInrYICvJjrAgV03HwKiYvtKHdPtaba1KucG+cNZ4NJnH9isqt979e67KZlhpbCOTwnsvnIr+CVeOg==
   dependencies:
     browserslist "^4.20.3"
     semver "7.0.0"
@@ -4629,9 +4629,9 @@ core-js-pure@^3.0.1:
   integrity sha512-YusrqwiOTTn8058JDa0cv9unbXdIiIgcgI9gXso0ey4WgkFLd3lYlV9rp9n7nDCsYxXsMDTjA4m1h3T348mdlQ==
 
 core-js-pure@^3.20.2:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.22.4.tgz#a992210f4cad8b32786b8654563776c56b0e0d0a"
-  integrity sha512-4iF+QZkpzIz0prAFuepmxwJ2h5t4agvE8WPYqs2mjLJMNNwJOnpch76w2Q7bUfCPEv/V7wpvOfog0w273M+ZSw==
+  version "3.22.5"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.22.5.tgz#bdee0ed2f9b78f2862cda4338a07b13a49b6c9a9"
+  integrity sha512-8xo9R00iYD7TcV7OrC98GwxiUEAabVWO3dix+uyWjnYrx9fyASLlIX+f/3p5dW5qByaP2bcZ8X/T47s55et/tA==
 
 core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.12"
@@ -7557,9 +7557,9 @@ io-ts@1.10.4:
     fp-ts "^1.0.0"
 
 ip@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
-  integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.7.tgz#4f6195d7bdb30435aac35301e7b993c6c8218c0d"
+  integrity sha512-SLm2ERgmBGag79RfrIknk+40ZOJCgUBpCQTl3WE2YER21VR0W3Vt/OAXXaYLSU0AIcBqWnytoTwk2ZcTbxH0xg==
 
 ipaddr.js@1.9.1:
   version "1.9.1"
@@ -10677,10 +10677,10 @@ rechoir@0.7.0:
   dependencies:
     resolve "^1.9.0"
 
-redstone-api-extended@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/redstone-api-extended/-/redstone-api-extended-1.0.6.tgz#bba620391acde49548de6526057321ea12c09716"
-  integrity sha512-uRNfvcOfJw6GODD8dTYCt6Ovhk48TVkkBDhQALc49eMiwBAkPN5Fa4K8OdtYmABnxaK3HeL3Uc9zUa/vA7XJZg==
+redstone-api-extended@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/redstone-api-extended/-/redstone-api-extended-1.0.7.tgz#65321a6d898347ef32920f18f2bd5dd815d4b911"
+  integrity sha512-iNolKR6YohPeops0r+hUgjdBVyEjA2l2EbmHjK0EatKlcRoioQAKiBjaEbtn+Zr+4Wc1JjdI6xcbQkyh17ezhg==
   dependencies:
     ar-gql "^0.0.6"
     arweave "^1.10.16"
@@ -10720,10 +10720,10 @@ redstone-api@^0.4.4, redstone-api@^0.4.6:
     pako "^2.0.3"
     redstone-node "0.4.18"
 
-redstone-evm-connector@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.1.10.tgz#388cd925c4354ac86670155e252901421dcd608c"
-  integrity sha512-ooVzf+6HJkan9OmybXlbEcMk+2UcOIVxXLn1fGSwSfh40xRbTVU4UJi1oHpYDszBCTbF4y7Gji0QZnzShj4kCQ==
+redstone-evm-connector@^2.1.12:
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.1.12.tgz#a8ed0983578d4825e0399645b5ea5d40fe5fd424"
+  integrity sha512-/6LMi3CMNK7GXAhdv6G+XFe5G1nOjYHzofPR3me92rPpjy9kjp3M9kfIH0DsbE/hJpEUBPux3gkegQ/JF7r20w==
   dependencies:
     "@ethersproject/providers" "5.4.3"
     "@openzeppelin/contracts" "^4.1.0"
@@ -10739,7 +10739,7 @@ redstone-evm-connector@^2.1.10:
     prettier-plugin-solidity "^1.0.0-beta.19"
     promise-timeout "^1.3.0"
     redstone-api "^0.4.0"
-    redstone-api-extended "^1.0.6"
+    redstone-api-extended "^1.0.7"
     redstone-node "^0.4.32"
     solidity-bytes-utils "^0.1.2"
     ts-generator "^0.1.1"
@@ -10784,9 +10784,9 @@ redstone-node@0.4.18:
     yargs "^16.2.0"
 
 redstone-node@^0.4.32:
-  version "0.4.32"
-  resolved "https://registry.yarnpkg.com/redstone-node/-/redstone-node-0.4.32.tgz#0a726721a3bbdceb69da6099bfdd4511606d6aa8"
-  integrity sha512-SE+KCpKIlfJT+RnT+iJ/Wfc0l3jS7GPy3z5AMuxkwsfcTgcu8VQ8KJmwBzQ/Zn0Xzl003AS2cn32BnI3ZvPaFg==
+  version "0.4.33"
+  resolved "https://registry.yarnpkg.com/redstone-node/-/redstone-node-0.4.33.tgz#251c4a4df570f192988c1f0e9f49b82bdc92040a"
+  integrity sha512-C23BZXfMTiPTrOh6QGs2BB3ejJa1GumS0bR7uKBh1XyaY3kp9Pa6ArUlB/DZTBQ2aBddsFIxWetsmeHMmgvQIw==
   dependencies:
     "@bundlr-network/client" "^0.5.12"
     "@types/express" "^4.17.13"
@@ -10820,9 +10820,9 @@ redstone-node@^0.4.32:
     yargs "^16.2.0"
 
 redstone-smartweave@^0.4.40:
-  version "0.4.83"
-  resolved "https://registry.yarnpkg.com/redstone-smartweave/-/redstone-smartweave-0.4.83.tgz#c78d7b1c2f9d842605b5a321623d976bdc050190"
-  integrity sha512-Umqtb79ba60g6UTvG9peH1sdBVGGpY3eRB80aOgDrh6ydMTXN2fVebi+25XidmKXvfLQPhf6/uFFyxgVttd+EQ==
+  version "0.4.84"
+  resolved "https://registry.yarnpkg.com/redstone-smartweave/-/redstone-smartweave-0.4.84.tgz#2bd380cfbb8224d313cea8f3a6d167b181947607"
+  integrity sha512-+505ACGPG+JKrWwfnBtFLLGYrlWIEEjLgXBlMQDgwx5Jpj//ebZuBQi8iiI6BexOdOgt08pdnWxoEce+odmPlQ==
   dependencies:
     "@assemblyscript/loader" "^0.19.23"
     archiver "^5.3.0"
@@ -12560,7 +12560,7 @@ tslib@^1.9.0, tslib@^1.9.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.0, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@^2.3.1, tslib@^2.4.0:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@^2.3.1, tslib@^2.4.0, tslib@~2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
@@ -12569,11 +12569,6 @@ tslib@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
-
-tslib@~2.3.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 tslog@^3.2.2:
   version "3.3.3"
