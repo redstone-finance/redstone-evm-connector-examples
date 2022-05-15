@@ -1,6 +1,6 @@
 const { WrapperBuilder } = require("redstone-evm-connector");
 
-describe("Custom URL test", function () {
+describe("Example Custom URL", function () {
   let exampleContract;
 
   beforeEach(async () => {

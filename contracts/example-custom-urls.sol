@@ -9,7 +9,7 @@ contract ExampleContractCustomUrls is PriceAware {
   uint256 private lastValue = 0;
 
   function isSignerAuthorized(address _receviedSigner) public override virtual view returns (bool) {
-    // For redstone-avalanche-prod price feed (it has 2 authorised signers)
+    // Signers for redstone-custom-urls-demo data feed (it has 2 authorised signers)
     return _receviedSigner == 0x11fFFc9970c41B9bFB9Aa35Be838d39bce918CfF
       || _receviedSigner == 0xdBcC2C6c892C8d3e3Fe4D325fEc810B7376A5Ed6;
   }

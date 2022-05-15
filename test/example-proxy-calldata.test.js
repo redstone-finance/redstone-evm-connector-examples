@@ -7,7 +7,7 @@ function arePricesSimilar(priceFromContract, price, maxDiff = 1) {
   return diff <= maxDiff;
 }
 
-describe("Example contract", function () {
+describe("Example with proxy calldata", function () {
   let contractA, tslaPrice;
 
   beforeEach(async () => {

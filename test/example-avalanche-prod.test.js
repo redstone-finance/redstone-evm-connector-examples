@@ -1,6 +1,6 @@
 const { WrapperBuilder } = require("redstone-evm-connector");
 
-describe("Example contract", function () {
+describe("Example avalanche prod", function () {
   let exampleContract;
 
   beforeEach(async () => {
