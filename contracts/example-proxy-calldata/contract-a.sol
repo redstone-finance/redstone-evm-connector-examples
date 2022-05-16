@@ -4,9 +4,9 @@ pragma solidity ^0.8.2;
 
 import "./contract-b.sol";
 import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
-import "redstone-evm-connector/lib/contracts/message-based/ProxyConnector.sol";
+import "redstone-evm-connector/lib/contracts/commons/ProxyConnector.sol";
 
-contract ContractA is ProxyConnector {
+contract ContractA {
 
   ContractB private contractB;
 
@@ -21,9 +21,10 @@ contract ContractA is ProxyConnector {
     // bContract.setPrice();
 
     // But to proxy calldata we need to add a bit more instructions
-    proxyCalldata(
+    ProxyConnector.proxyCalldata(
       address(contractB),
-      abi.encodeWithSelector(ContractB.writeValue.selector));
+      abi.encodeWithSelector(ContractB.writeValue.selector),
+      false);
   }
 
   // Implementation from: https://stackoverflow.com/a/63258666
@@ -38,9 +39,10 @@ contract ContractA is ProxyConnector {
     // lastValueFromContractB = bContract.getLastTeslaPrice();
 
     // But to proxy calldata we need to add a bit more instructions
-    bytes memory bytesResponse = proxyCalldata(
+    bytes memory bytesResponse = ProxyConnector.proxyCalldata(
       address(contractB),
-      abi.encodeWithSelector(ContractB.getValue.selector));
+      abi.encodeWithSelector(ContractB.getValue.selector),
+      false);
     lastValueFromContractB = toUint256(bytesResponse);
   }
 
