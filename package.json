@@ -14,7 +14,7 @@
     "@openzeppelin/contracts": "^4.4.2",
     "ethers": "^5.4.6",
     "redstone-api": "^0.4.6",
-    "redstone-evm-connector": "^2.1.16"
+    "redstone-evm-connector": "^2.2.16-alpha"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",

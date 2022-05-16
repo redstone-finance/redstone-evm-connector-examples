@@ -2874,7 +2874,7 @@ aws4@^1.6.0, aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
-axios@*:
+axios@*, axios@^0.27.2:
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
   integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
@@ -10742,16 +10742,17 @@ redstone-api@^0.4.4, redstone-api@^0.4.6:
     pako "^2.0.3"
     redstone-node "0.4.18"
 
-redstone-evm-connector@^2.1.16:
-  version "2.1.16"
-  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.1.16.tgz#f89520efcfc20be39663327ac96c63280785b2ac"
-  integrity sha512-+HK82mVT5u9WX10RjrM+0tA6l0b9cAYoss6is4DBJ78tRSB4BBvhrUs21TW0wUk4cLcwWF3Oobn9rjXIyq4Uvg==
+redstone-evm-connector@^2.2.16-alpha:
+  version "2.2.16-alpha"
+  resolved "https://registry.yarnpkg.com/redstone-evm-connector/-/redstone-evm-connector-2.2.16-alpha.tgz#52c598751d76b7ec4828315827fe70a4bfa0c384"
+  integrity sha512-vHySxa4H8vAkrfyDSs4TePjEwkKfHlvrFqIMU8UxAnBAE4E40JnNWwYBAxbUJ4HpWSOA1HvPtd06ra22iwWmiw==
   dependencies:
     "@ethersproject/providers" "5.4.3"
     "@openzeppelin/contracts" "^4.1.0"
     "@openzeppelin/contracts-upgradeable" "^4.3.2"
     "@openzeppelin/test-helpers" "^0.5.10"
     "@typechain/ethers-v5" "6.0.5"
+    axios "^0.27.2"
     bluebird "^3.7.2"
     eth-sig-util "^3.0.1"
     ethereumjs-util "^7.1.0"
