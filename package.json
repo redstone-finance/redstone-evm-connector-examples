@@ -13,6 +13,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.2",
     "ethers": "^5.4.6",
+    "hardhat-gas-reporter": "^1.0.8",
     "redstone-api": "^0.4.6",
     "redstone-evm-connector": "^2.1.16"
   },
