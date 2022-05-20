@@ -4,7 +4,7 @@ pragma solidity ^0.8.2;
 
 import "./VRF.sol";
 
-contract VRFExp {
+contract RedStoneVRFConsumerBase {
 
   bool public lastVerificationResult;
 

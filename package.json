@@ -12,16 +12,19 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.4.2",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-util": "^7.1.4",
     "ethers": "^5.4.6",
     "hardhat-gas-reporter": "^1.0.8",
     "redstone-api": "^0.4.6",
-    "redstone-evm-connector": "^2.1.16"
+    "redstone-evm-connector": "^2.1.16",
+    "web3-eth-abi": "^1.7.3"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
-    "ethereum-waffle": "^3.4.0",
+    "ethereum-waffle": "^3.4.4",
     "hardhat": "^2.6.4"
   }
 }

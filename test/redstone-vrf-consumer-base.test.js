@@ -2,6 +2,8 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 const axios = require("axios");
 
+// TODO: move this file to redstone-evm-connector
+
 describe("VRF experiments", function () {
   const vrfNodeUrl = "https://redstone-vrf-oracle-node-1.redstone.finance/vrf-requests";
   // const vrfNodeUrl = "http://localhost:8080/vrf-requests";
@@ -10,7 +12,7 @@ describe("VRF experiments", function () {
 
   before(async () => {
     // Deploy contract
-    const VRFExpFactory = await ethers.getContractFactory("VRFExp");
+    const VRFExpFactory = await ethers.getContractFactory("RedStoneVRFConsumerBase");
     contract = await VRFExpFactory.deploy();
 
     // Request randomness from RedStone VRF node 
