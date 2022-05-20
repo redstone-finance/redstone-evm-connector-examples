@@ -1,9 +1,9 @@
 {
-  "name": "redstone-flash-storage-examples",
+  "name": "redstone-evm-connector-examples",
   "version": "1.0.0",
-  "description": "Examples that use redstone-flash-storage for price injection",
+  "description": "Examples that use redstone-evm-connector for price injection",
   "main": "index.js",
-  "repository": "https://github.com/redstone-finance/redstone-flash-storage-examples",
+  "repository": "https://github.com/redstone-finance/redstone-evm-connector-examples",
   "author": "hatskier <suvorovalex1997@gmail.com>",
   "license": "MIT",
   "scripts": {
