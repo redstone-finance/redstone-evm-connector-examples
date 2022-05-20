@@ -5,7 +5,7 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 const web3Abi = require("web3-eth-abi");
 
-const { MockProvider } = require("ethereum-waffle");
+// const { MockProvider } = require("ethereum-waffle");
 
 const domainType = [
   {
@@ -122,7 +122,6 @@ const getTransactionData = async (user, nonce, abi, domainData, params) => {
 
 describe("ERC721MetaTransactionMaticSample", function () {
   let erc721;
-  let approvedContract;
 
   before(async () => {
     const ERC721MetaTransactionMaticSample = await ethers.getContractFactory(
@@ -133,18 +132,21 @@ describe("ERC721MetaTransactionMaticSample", function () {
       "ST"
     );
 
-    const ApprovedSpenderContract = await ethers.getContractFactory(
-      "ApprovedSpenderContract"
-    );
-    const approvedSpenderContract = await ApprovedSpenderContract.deploy();
-
     erc721 = await erc721MetaTransactionMaticSample.deployed();
-    approvedContract = await approvedSpenderContract.deployed();
 
   });
 
   it("setApprovalForAll MetaTransaction Test", async function () {
-    const wallet = new MockProvider().createEmptyWallet();
+    // Original
+    // const wallet = new MockProvider().createEmptyWallet();
+
+    // My small update (to check if user can send his own meta tx)
+    const wallet = new ethers.Wallet("0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80");
+    console.log(wallet);
+
+    console.log(`Current signer address in contract: ${erc721.signer.address}`);
+
+    const addressToApprove = new ethers.Wallet.createRandom().address; // any random address
 
     let name = await erc721.name();
     let nonce = await erc721.getNonce(wallet.getAddress());
@@ -163,13 +165,13 @@ describe("ERC721MetaTransactionMaticSample", function () {
       nonce,
       setApprovalForAllAbi,
       domainData,
-      [approvedContract.address, true]
+      [addressToApprove, true]
     );
 
     let user = await wallet.getAddress();
 
     expect(
-      await erc721.isApprovedForAll(user, approvedContract.address)
+      await erc721.isApprovedForAll(user, addressToApprove)
     ).to.equal(false);
 
     // Here we send tx
@@ -186,7 +188,7 @@ describe("ERC721MetaTransactionMaticSample", function () {
     console.log(receipt);
 
     expect(
-      await erc721.isApprovedForAll(user, approvedContract.address)
+      await erc721.isApprovedForAll(user, addressToApprove)
     ).to.equal(true);
   });
 });
