@@ -109,3 +109,7 @@ artifacts
 
 # Custom files
 .secrets*.json
+
+coverage
+coverage.json
+typechain
