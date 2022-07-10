@@ -4,7 +4,7 @@ pragma solidity ^0.8.2;
 
 import "redstone-evm-connector/lib/contracts/message-based/PriceAware.sol";
 
-contract ExampleRedstoneRapid is PriceAware {
+contract ExampleRedstoneRapidMock is PriceAware {
   uint256 private lastPrice = 0;
 
   function isSignerAuthorized(address _receviedSigner)
@@ -18,15 +18,11 @@ contract ExampleRedstoneRapid is PriceAware {
   }
 
   function setPrice() public {
-    uint256 ethPrice = getEthPriceUsingOracle();
+    uint256 ethPrice = 42 * 10**8;
     lastPrice = ethPrice;
   }
 
   function getLastPrice() public view returns (uint256) {
     return lastPrice;
-  }
-
-  function getEthPriceUsingOracle() public view returns (uint256) {
-    return getPriceFromMsg(bytes32("ETH"));
   }
 }

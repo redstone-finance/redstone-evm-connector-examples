@@ -18,15 +18,15 @@ describe("Example pseudo random", function () {
     const randomNumber = await wrappedContract.generateRandomNumber(1000);
     console.log({ randomNumber: randomNumber.toNumber() });
 
-    // const maxNumbersCount = 16;
-    // const maxValue = 10000;
-    // const tx = await wrappedContract.generateManyRandomNumbers(maxNumbersCount, maxValue);
-    // await tx.wait();
+    const maxNumbersCount = 16;
+    const maxValue = 10000;
+    const tx = await wrappedContract.generateManyRandomNumbers(maxNumbersCount, maxValue);
+    await tx.wait();
 
-    // const manyRandoms = await wrappedContract.getGeneratedNFTIndexes();
-    // console.log({
-    //   manyRandoms: manyRandoms.map(r => r.toNumber()),
-    // });
+    const manyRandoms = await wrappedContract.getGeneratedNFTIndexes();
+    console.log({
+      manyRandoms: manyRandoms.map(r => r.toNumber()),
+    });
   });
 
   it("Example with custom configuration", async function () {
