@@ -15,7 +15,7 @@
     "dotenv": "^16.0.1",
     "ethers": "^5.6.9",
     "redstone-api": "^0.4.6",
-    "redstone-evm-connector": "^2.1.21"
+    "redstone-evm-connector": "^2.1.25"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",

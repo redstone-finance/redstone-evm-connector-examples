@@ -17,6 +17,10 @@ contract ExampleRedstoneRapid is PriceAware {
     return _receviedSigner == 0xf786a909D559F5Dee2dc6706d8e5A81728a39aE9; // redstone-rapid
   }
 
+  function getMaxBlockTimestampDelay() public pure override returns (uint256) {
+    return 120; // 2 minutes block timestamp lag is acceptable
+  }
+
   function setPrice() public {
     uint256 ethPrice = getEthPriceUsingOracle();
     lastPrice = ethPrice;

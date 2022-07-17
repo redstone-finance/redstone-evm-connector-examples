@@ -22,10 +22,11 @@ const config: HardhatUserConfig = {
     },
     rsk: {
       url: "https://public-node.testnet.rsk.co",
+      gasMultiplier: 2,
       accounts:
-          process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
-  }
+  },
 };
 
 export default config;
